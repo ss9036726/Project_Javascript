@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Faculty-DashBoard</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div>
+                <img src="images/logo.png" alt="Logo" width="200px" height="200px">
+            </div>
+                <ul>
+                    <li>
+                        <a href="faculty.html">
+                            <span><i class="fa fa-home"></i></span>
+                            <span>HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="fa fa-user"></i></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="search.html">
+                            <span><i class="fa fa-search"></i></span>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">
+                            <span><i class="fa fa-clock-o"></i></span>
+                            <span>Schedule</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../Login/login.html">
+                            <span><i class="fa fa-sign-out"></i></span>
+                            <span>LogOut</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="form-inline">
+                    <h1 style="text-align:center;margin-bottom: 30px;">ADD SCHEDULE</h1>
+                    <input id="busNo" type="text" class="form-control" placeholder="Enter Bus No: ">
+                    <input id="pickUp" type="text" class="form-control" placeholder="Enter PickUp Point: ">
+                    <input id="arrivalTime" type="text" class="form-control" placeholder="Enter Arrival Time: ">
+                    <input id= "dropPoint" type="text" class="form-control" placeholder="Enter Drop Point: ">
+                    <input id= "dropTime" type="text" class="form-control" placeholder="Enter Drop Time:"></td><br>   <button class="btn btn-success" onclick="addValue();">Add Schedule</button>  
+                    <button class="btn btn-primary" onclick="editVal();">Edit Schedule</button>
+                    <button class="btn btn-danger" onclick="removeSelected();">Remove Selected Schedule</button>
+                </div>
+                <div class="main">
+                        <h3>Arriving Time</h3>
+                        <table class="table table-hover" id="table">
+                            <thead>
+                                <th>Bus No.</th>
+                                <th>PickUp Point</th>
+                                <th>Arrival Time</th>
+                                <th>Drop Point</th>
+                                <th>Drop Time</th>
+                            </thead>
+                            <tbody>
+                                <td>B-101</td>
+                                <td>Pinjore</td>
+                                <td>8:00 am</td>
+                                <td>Chitkara University</td>
+                                <td>8:30 am</td>
+                            </tbody>
+                            <tbody>
+                                <td>B-103</td>
+                                <td>Panchkula</td>
+                                <td>7:30 am</td>
+                                <td>Chitkara University</td>
+                                <td>8:50 am</td>
+                            </tbody>
+                            <tbody>
+                                <td>B-104</td>
+                                <td>Mohali</td>
+                                <td>7:15 am</td>
+                                <td>Chitkara University</td>
+                                <td>8:40 am</td>
+                            </tbody>
+                            <tbody>
+                                <td>B-105</td>
+                                <td>Sector-9</td>
+                                <td>7:45 am</td>
+                                <td>Chitkara University</td>
+                                <td>8:35 am</td>
+                            </tbody>
+                            <tbody>
+                                <td>B-106</td>
+                                <td>Sector-17</td>
+                                <td>7:40 am</td>
+                                <td>Chitkara University</td>
+                                <td>8:40 am</td>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="lib/schedule.js"></script>
+	<script>
+	</script>
+
+</body>
+
+</html>
